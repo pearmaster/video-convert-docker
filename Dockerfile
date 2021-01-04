@@ -1,4 +1,6 @@
-FROM ubunut:20.10
+FROM ubunutu:20.10
+
+ENV MQTT_HOST="localhost"
 
 RUN apt-get update && \
     apt-get install -y \
@@ -9,4 +11,5 @@ RUN apt-get update && \
     && \
     rm -rf /var/lib/apt/lists/*
  
- 
+ VOLUME "/input"
+ VOLUME "/output"
