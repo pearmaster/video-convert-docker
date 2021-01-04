@@ -7,7 +7,7 @@ RUN apt-get update && \
     apt-get install -y \
       ffmpeg \
       handbrake-cli \
-      mosquitto-clents \
+      mosquitto-clients \
       x264 \
     && \
     rm -rf /var/lib/apt/lists/*
