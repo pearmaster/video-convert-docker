@@ -7,10 +7,11 @@ RUN apt-get update && \
     apt-get install -y \
       ffmpeg \
       handbrake-cli \
+      mediainfo \
       mosquitto-clients \
       x264 \
     && \
     rm -rf /var/lib/apt/lists/*
  
- VOLUME "/input"
- VOLUME "/output"
+ VOLUME "/media"
+ VOLUME "/shared"
