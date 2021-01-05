@@ -12,6 +12,8 @@ RUN apt-get update && \
       x264 \
     && \
     rm -rf /var/lib/apt/lists/*
- 
- VOLUME "/media"
- VOLUME "/shared"
+    
+COPY ./chunk_file.sh /usr/local/bin/
+    
+VOLUME "/media"
+VOLUME "/shared"
