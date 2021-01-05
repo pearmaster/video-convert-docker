@@ -2,11 +2,13 @@ FROM ubuntu:20.10
 
 ENV MQTT_HOST="localhost"
 ENV CHUNK_SIZE_MINUTES=10
+ENV PROCESS_MODE="convert"
 
 RUN apt-get update && \
     apt-get install -y \
       ffmpeg \
       handbrake-cli \
+      libxml-xpath-perl \
       mediainfo \
       mosquitto-clients \
       x264 \
