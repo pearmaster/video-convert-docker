@@ -11,6 +11,8 @@ RUN apt-get update && \
       libxml-xpath-perl \
       mediainfo \
       mosquitto-clients \
+      python3-webdav \
+      python3-easywebdav \
       x264 \
     && \
     rm -rf /var/lib/apt/lists/*
